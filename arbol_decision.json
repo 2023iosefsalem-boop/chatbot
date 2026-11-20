@@ -1,0 +1,121 @@
+{
+  "nodos": [
+    {
+      "id": "inicio",
+      "texto": "Bienvenido al asistente de fútbol de River Plate. Seleccione una consulta del menú principal:",
+      "opciones": [
+        {
+          "texto": "hoy juega river?",
+          "siguiente": "hoy_juega"
+        },
+        {
+          "texto": "como va el millonario?",
+          "siguiente": "como_va"
+        },
+        {
+          "texto": "Terminar conversación",
+          "siguiente": "fin"
+        }
+      ]
+    },
+    {
+      "id": "hoy_juega",
+      "texto": "Hoy no hay partido programado. El próximo encuentro será el domingo a las 17:00 hs en el Estadio Mâs Monumental por el torneo local.",
+      "opciones": [
+        {
+          "texto": "Ver transmisión y entradas",
+          "siguiente": "detalle_partido"
+        },
+        {
+          "texto": "Consultar cómo va en la tabla",
+          "siguiente": "como_va"
+        },
+        {
+          "texto": "Opciones de retorno",
+          "siguiente": "menu_retorno"
+        }
+      ]
+    },
+    {
+      "id": "detalle_partido",
+      "texto": "Transmisión oficial por ESPN Premium y TNT Sports. El canje de entradas se realiza exclusivamente a través de RiverID.",
+      "opciones": [
+        {
+          "texto": "Opciones de retorno",
+          "siguiente": "menu_retorno"
+        }
+      ]
+    },
+    {
+      "id": "como_va",
+      "texto": "River Plate se ubica en el 3.° puesto de la tabla general con 28 puntos (8 victorias, 4 empates y 2 derrotas).",
+      "opciones": [
+        {
+          "texto": "Ver resultado del último partido",
+          "siguiente": "ultimo_resultado"
+        },
+        {
+          "texto": "Consultar si hoy juega River",
+          "siguiente": "hoy_juega"
+        },
+        {
+          "texto": "Opciones de retorno",
+          "siguiente": "menu_retorno"
+        }
+      ]
+    },
+    {
+      "id": "ultimo_resultado",
+      "texto": "Último encuentro: victoria 2-0 en condición de local. El equipo mantiene una racha de cuatro partidos sin derrotas.",
+      "opciones": [
+        {
+          "texto": "Opciones de retorno",
+          "siguiente": "menu_retorno"
+        }
+      ]
+    },
+    {
+      "id": "menu_retorno",
+      "texto": "¿Cómo desea continuar?",
+      "opciones": [
+        {
+          "texto": "Volver al menú principal",
+          "siguiente": "inicio"
+        },
+        {
+          "texto": "Revisar mis últimas elecciones",
+          "siguiente": "ver_resumen"
+        },
+        {
+          "texto": "Terminar conversación",
+          "siguiente": "fin"
+        }
+      ]
+    },
+    {
+      "id": "ver_resumen",
+      "texto": "Estas son sus últimas consultas registradas en esta sesión:",
+      "opciones": [
+        {
+          "texto": "Volver al menú principal",
+          "siguiente": "inicio"
+        },
+        {
+          "texto": "Terminar conversación",
+          "siguiente": "fin"
+        }
+      ]
+    },
+    {
+      "id": "fin",
+      "texto": "Conversación finalizada. Gracias por utilizar el chatbot.",
+      "opciones": [
+        {
+          "texto": "Volver a empezar",
+          "siguiente": "inicio",
+          "accion": "reiniciar"
+        }
+      ]
+    }
+  ]
+}
